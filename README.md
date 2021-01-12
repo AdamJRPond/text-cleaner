@@ -36,7 +36,7 @@ To run the tests inside of the docker container, first access the containers ter
 docker exec -it fastapi "/bin/bash"
 ```
 
-Then, inside container's terminal...
+Then, inside the container's terminal...
 ```bash
 pipenv run python -m unittest
 ```
