@@ -11,7 +11,7 @@ All that is needed for running the project is [docker](https://docs.docker.com/e
 
 For Python dependencies I like to use [pipenv](https://github.com/pypa/pipenv), which is the Python recommended package manager, for which the packages are defined in the [Pipfile](https://github.com/AdamJRPond/text-cleaner/blob/main/Pipfile). 
 
-JavaScript dependencies are defined in the [package.json](https://github.com/AdamJRPond/text-cleaner/blob/main/frontend/[package.json]) and I used [yarn](https://yarnpkg.com/) as the package manager.
+JavaScript dependencies are defined in the [package.json](https://github.com/AdamJRPond/text-cleaner/blob/main/frontend/package.json) and I used [yarn](https://yarnpkg.com/) as the package manager.
 
 Both Python and JavaScript dependencies will be downloaded and installed at build-time of the docker services.
 
