@@ -1,0 +1,43 @@
+{
+    "name": "scibite-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "AdamJRPond <adampondlondon@gmail.com>",
+    "license": "PROPRIETARY",
+    "private": true,
+    "scripts": {
+      "start": "yarn build && node server",
+      "webpack-dev-server": "webpack-dev-server --color --inline --hot --history-api-fallback --config config/webpack/webpack.config.js",
+      "webpack": "webpack --config config/webpack/webpack.config.js"
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "babel": "^6.23.0",
+      "babel-core": "^6.26.3",
+      "babel-eslint": "^8.2.6",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-react-css-modules": "^3.4.2",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "classnames": "^2.2.5",
+      "css-loader": "^0.28.11",
+      "history": "^4.7.2",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "lodash": "^4.17.10",
+      "node-sass": "^4.9.0",
+      "react": "^16.4.0",
+      "react-dom": "^16.4.0",
+      "react-measure": "^2.0.2",
+      "recompose": "^0.27.1",
+      "sass-loader": "^7.0.3",
+      "style-loader": "^0.21.0",
+      "url-loader": "^1.0.1",
+      "webpack": "^4.11.1",
+      "webpack-cli": "^3.0.3",
+      "webpack-dev-server": "^3.1.4"
+    }
+  }
+  

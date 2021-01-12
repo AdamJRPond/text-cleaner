@@ -1,0 +1,22 @@
+version: '3'
+services:
+  webpack-dev-server:
+    container_name:  webpack-dev-server
+    build:
+      context: ./
+      dockerfile: ./config/docker/client.Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - NODE_ENV=development
+    command: 'yarn webpack-dev-server --host 0.0.0.0'
+  fastapi:
+    container_name: fastapi
+    build:
+      context: ./
+      dockerfile: ./config/docker/server.Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./tests:/app/tests
+    command: pipenv run uvicorn main:app --host 0.0.0.0 --port 8000 --log-level debug

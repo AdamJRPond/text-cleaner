@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:900,400,200');
+
+body {
+  margin: 0;
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+}
+
+:global(#app) {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

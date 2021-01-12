@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  padding-top: 10px;
+  &.active {
+    .label {
+      font-size: 14px;
+      top: 5px;
+      left: 5px;
+    }
+  }
+  &.focused {
+    color: #000000;
+}
+}
+
+.label {
+    position: absolute;
+    top: 32px;
+    left: 12px;
+    font-size: 18px;
+    transition-property: top, font-size, left, color;
+    transition-duration: 500ms;
+    cursor: text;
+}
+
+.input {
+    width: 60%;
+    height: 160px;
+    border: 2px double black;
+    transition: border 250ms;
+    margin: 40px 40px;
+    padding: 8px 10px;
+    font-size: 18px;
+    outline: none;
+    &:focus {
+      border-color: #111111;
+  }
+}

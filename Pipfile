@@ -1,0 +1,7 @@
+[packages]
+pandas = "*"
+nltk = "*"
+requests = "*"
+fastapi = "*"
+uvicorn = "*"
+scikit-learn="*"
